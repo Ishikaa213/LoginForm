@@ -1,0 +1,128 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ html,body{
+width: 100%;
+height: 100%;
+font-family: 'Arial', sans-serif;
+background-color: #f1f6fc;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
+  
+  .form-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .form-group label {
+    position: absolute;
+    left: 12px;
+    top: -10px;
+    font-size: 0.9rem;
+    color: #007acc;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #007acc;
+    background-color: #fff;
+  }
+  
+  .form-group input:focus + label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: #007acc;
+  }
+  
+  .form-group input:valid + label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: #007acc;
+  }
+  
+  .password-group {
+    position: relative;
+  }
+  
+  .password-toggle {
+    display: none;
+  }
+  
+  .password-toggle:checked + .toggle-icon {
+    color: #007acc;
+    cursor: pointer;
+  }
+  
+  .password-group .toggle-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .password-group .toggle-icon:hover {
+    color: #007acc;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  .submit-btn:active {
+    background-color: #004b8d;
+    transform: scale(1);
+  }
+  
+    
